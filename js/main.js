@@ -143,4 +143,13 @@ $(function () {
 
   $(window).on('resize orientationchange', checkMode);
   checkMode();
+
+  //aos 초기화
+  $(window).load(function () {
+    AOS.init({
+      duration: 1300
+    });
+  });
+
+
 });
