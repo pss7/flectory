@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>작업내역</title>
+    <style>
+        #wrap {
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 26px;
+            margin: 0 0 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        thead th {
+            padding: 10px 20px;
+            border: 1px solid #ddd;
+            font-weight: 500;
+            color: #000;
+            background-color: #f7f7f7;
+        }
+
+        tbody th {
+            width: 50%;
+            padding: 10px 20px;
+            border: 1px solid #ddd;
+            font-weight: 400;
+        }
+
+        tbody td {
+            width: 50%;
+            padding: 10px 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+            color: #000;
+        }
+
+        .title th {
+            background-color: #f7f7f7;
+            font-weight: 500;
+        }
+
+        @media (max-width: 480px) {
+
+            h1 {
+                font-size: 22px;
+            }
+
+            .tableBox {
+                overflow-x: auto;
+            }
+
+            .tableBox table {
+                width: 480px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="wrap">
+        <h1>
+            플랙토리 작업내역
+        </h1>
+        <div class="tableBox">
+            <table>
+                <thead>
+                    <tr>
+                        <th>내용</th>
+                        <th>파일명</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>메인</th>
+                        <td><a href="index.html" target="_blank">index.html</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
