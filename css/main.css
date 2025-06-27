@@ -74,6 +74,12 @@
 
 }
 
+@media (max-width: 414px){
+
+  #mainWrap .mainBox .box .titleBox p{font-size: 16px;}
+  #mainWrap .mainBox .box .titleBox .descriptionBox{top: 38%;}
+
+}
 
 
 
