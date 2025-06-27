@@ -86,6 +86,7 @@ $(function () {
       loop: true,
       navigation: { nextEl: '.control .next', prevEl: '.control .prev' },
       autoplay: { delay: 10000, disableOnInteraction: false },
+      speed: 1300,
     });
 
     $('.control .pause').on('click.swiper', () => {
