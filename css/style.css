@@ -102,7 +102,7 @@
   #headerWrap .sitemapBtn{display: none;}
   #headerWrap .mobileMenuBtn{display: block;}
   .mobileMenuWrap{display: block;}
-  #headerWrap .mobileMenuBtn{right: 40px;}
+  #headerWrap .mobileMenuBtn{right: 48px;}
 
 }
 
@@ -112,6 +112,12 @@
   .mobileMenuWrap .mobileLanguageBox{margin-left: 24px;}
   .mobileMenuWrap .mobileMenuDepth01 li h2 a{padding: 42px 10px 32px 24px;}
   .mobileMenuWrap .mobileMenuDepth01 li h2.depht02 a::after{right:23px;}
+
+}
+
+@media (max-width: 414px){
+
+    #headerWrap .mobileMenuBtn{right: 16px;}
 
 }
 
