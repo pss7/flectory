@@ -15,6 +15,12 @@
 
 }
 
+@media (max-width: 414px){
+
+  .container{padding: 0 16px;}
+
+}
+
 /* 헤더 */
 #headerWrap{position: fixed; top:-300px; left:0; right:0; z-index: 99; background-color: rgba(30, 31, 30, 0.4); border-bottom: 1px solid #EAEAEA; transition: all 1s;}
 #headerWrap.active{top:0;}

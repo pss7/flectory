@@ -22,7 +22,7 @@
 #mainWrap .mainBox .box.active h2{display: none;}
 #mainWrap .mainBox .box.active .tab{display: none;}
 #mainWrap .mainBox .box.swiper-slide-active .titleBox,
-#mainWrap .mainBox .box.active .titleBox{opacity: 1; visibility:visible; transform: translateY(0); transition: all 1.5s .8s;}
+#mainWrap .mainBox .box.active .titleBox{opacity: 1; visibility:visible; transform: translateY(0); transition: all 1.5s 1s;}
 #mainWrap .control{position: absolute; left:72px; bottom: 36px; display: flex; align-items: center; justify-content: center; gap: 0 53px; width: 216px; height: 40px; background-color:rgba(30, 31, 30, 0.8); z-index: 9;}
 #mainWrap .control button{position: relative;}
 #mainWrap .control .prev{width: 10px; height: 18px; background: url(../images/main/prev_icon.svg)no-repeat center; background-size: contain;}
@@ -77,7 +77,8 @@
 @media (max-width: 414px){
 
   #mainWrap .mainBox .box .titleBox p{font-size: 16px;}
-  #mainWrap .mainBox .box .titleBox .descriptionBox{top: 38%;}
+  #mainWrap .mainBox .box .titleBox .descriptionBox{top: 38%; left: 16px; right: 16px;} 
+  #mainWrap .control{left: 16px;}
 
 }
 
