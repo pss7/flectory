@@ -1,4 +1,12 @@
 $(function () {
+
+  //aos 초기화
+  $(window).load(function () {
+    AOS.init({
+      duration: 1300
+    });
+  });
+
   let lastSelectedIndex = 0,
     autoTimer = null,
     isPaused = false,
@@ -82,7 +90,7 @@ $(function () {
     getSlides().addClass('swiper-slide');
 
     swiperInstance = new Swiper('.swiper', {
-      slidesPerView: 'auto',
+      slidesPerView: 1,
       loop: true,
       navigation: { nextEl: '.control .next', prevEl: '.control .prev' },
       autoplay: { delay: 10000, disableOnInteraction: false },
@@ -116,40 +124,41 @@ $(function () {
   }
 
   function checkMode() {
+
     const winW = window.innerWidth;
 
     if (winW <= 1024 && !isSwiperMode) {
+      getSlides().removeClass('active');
+
       unbindCustomEvents();
       destroySwiper();
       initSwiper();
       isSwiperMode = true;
 
     } else if (winW > 1024 && isSwiperMode) {
-
       destroySwiper();
       isSwiperMode = false;
+
       requestAnimationFrame(() => {
         bindCustomEvents();
         lastSelectedIndex = 0;
         startAutoPlay();
+
+        const $slides = getSlides();
+        $slides.removeClass('active');
+        $slides.eq(0).addClass('active');
       });
 
     } else if (!isSwiperMode && autoTimer === null) {
       bindCustomEvents();
       lastSelectedIndex = 0;
       startAutoPlay();
+      getSlides().eq(0).addClass('active');
     }
+
   }
 
   $(window).on('resize orientationchange', checkMode);
   checkMode();
-
-  //aos 초기화
-  $(window).load(function () {
-    AOS.init({
-      duration: 1300
-    });
-  });
-
 
 });

@@ -55,7 +55,7 @@
   #mainWrap .mainBox .box h2,
   #mainWrap .mainBox .box .tab{display: none;}
 
-  #mainWrap .mainBox .box{width: 100%!important; transition: none;}
+  #mainWrap .mainBox .box{width: 100%!important;}
 
 }
 
