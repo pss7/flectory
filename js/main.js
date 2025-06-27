@@ -43,7 +43,7 @@ $(function () {
     const $slides = getSlides();
 
     $slides.each(function (i) {
-      $(this).find('.tab').on('click.custom', () => applyActive(i));
+      $(this).on('click.custom', () => applyActive(i));
     });
 
     $mainWrap.find('.control .prev').on('click.custom', () => {
@@ -70,7 +70,7 @@ $(function () {
   function unbindCustomEvents() {
     clearInterval(autoTimer);
     const $slides = getSlides();
-    $slides.find('.tab').off('.custom');
+    $slides.off('.custom');
     $mainWrap.find('.control .prev, .next, .pause, .play').off('.custom');
     $('.pause').show();
     $('.play').hide();

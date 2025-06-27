@@ -5,7 +5,7 @@
 #mainWrap video{display: block; position: absolute; top:0; left:0; right:0; bottom: 0; width: 100%; height: 100%; object-fit: cover;}
 #mainWrap .mainBox{height: 100%;}
 #mainWrap .mainBox .slideBox{position: relative; display: flex; width: 100%; height: 100%;}
-#mainWrap .mainBox .box{display: block; position: relative; align-items: center; width: 13%; overflow: hidden; transition: all 1s;}
+#mainWrap .mainBox .box{display: block; position: relative; align-items: center; width: 13%; overflow: hidden; transition: all 1s; cursor: pointer;}
 #mainWrap .mainBox .box::after{content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; backdrop-filter: blur(8px); z-index: 2;}
 #mainWrap .mainBox .box h2{position: absolute; top:42%; left:0; right:0; display: flex; justify-content: center; width: 100%; font-size: 36px; color: #fff; font-weight: 300; transform: rotate(90deg); white-space: nowrap; z-index: 9999;}
 #mainWrap .mainBox .box .titleBox{position: relative; opacity: 0; height: 100%; transform: translateY(60px); visibility: hidden; }
@@ -46,7 +46,6 @@
 @media (max-width: 1024px){
 
   #mainWrap .mainBox{display: block;}
-  /* #mainWrap .mainBox .box{position: absolute; top:0; width: 100%!important; height: 100%;} */
   #mainWrap .mainBox .box::after{display: none;}
   #mainWrap .control .prev,
   #mainWrap .control .next{width: 8px; height: 11px;}
@@ -57,7 +56,6 @@
   #mainWrap .mainBox .box .tab{display: none;}
 
   #mainWrap .mainBox .box{width: 100%; transition: none;}
-
 
 }
 
