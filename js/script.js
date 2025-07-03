@@ -55,69 +55,8 @@ $(function () {
     }
   });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  //클릭 시 섹션이동
-  $("#headerWrap .link").click(function (e) {
-    e.preventDefault();
-
-    const targetId = $(this).attr('href');
-    const targetOffset = $(targetId).offset().top;
-
-    const headerHeight = $('header').outerHeight();
-    const scrollTarget = targetOffset - headerHeight;
-
-    $('html, body').animate({
-      scrollTop: scrollTarget
-    }, 600);
+  $('.textPopup .closeBtn').click(function () {
+    $('.textPopup').fadeOut();
   });
-
-  //모바일 메뉴
-  $('#headerWrap .mobileBtn').click(function () {
-    $('body').addClass('of');
-    $(".mobileWrap").animate({
-      right: 0
-    }, 500)
-    $('#headerWrap .bg').show();
-  });
-  $('.mobileCloseBtn').click(function () {
-    $('body').removeClass('of');
-    $('.mobileWrap').animate({
-      right: -3000
-    }, 500);
-    $('#headerWrap .bg').hide();
-  });
-
-  //스크롤 시 헤더 스타일
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 50) {
-      $('#headerWrap').addClass('scrollStyle');
-    } else {
-      $('#headerWrap').removeClass('scrollStyle');
-    }
-  });
-
-
-
 
 });
