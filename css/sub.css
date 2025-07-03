@@ -376,3 +376,46 @@
     .newsList li{width: 100%;}
 
 }
+
+/* Contact */
+.contactBox .layoutBox{display: flex; align-items: center; gap: 0 125px;}
+.contactBox .infoBox .box{margin-bottom: 72px;}
+.contactBox .infoBox .box:last-child{margin-bottom: 0;}
+.contactBox .infoBox .box h3{margin-bottom: 16px; width: 197px; height: 47px; line-height: 47px; border-radius: 4px; background-color: #97A3B2; color:#fff; font-size: 18px; text-align: center;}
+.contactBox .infoBox .box address,
+.contactBox .infoBox .box .list li{margin-left: 15px; color: #1E1F1E;}
+.contactBox .mapBox{width: 747px; height: 392px; border-radius: 8px; border: 1px solid #e7e7e7; overflow: hidden;}
+.contactBox .mapBox iframe{width: 100%; height: 100%;}
+
+@media (max-width: 1199px){
+
+  .contactBox .infoBox .box{margin-bottom: 60px;}
+  .contactBox .infoBox .box h3{margin-bottom: 14px; width: 165px; height: 33px; line-height: 33px; font-size: 15px;}
+  .contactBox .layoutBox{gap: 0 86px;}
+  .contactBox .mapBox{width: 623px; height: 327px;}
+  .contactBox .infoBox .box address,
+  .contactBox .infoBox .box .list li{margin-left: 13px; font-size: 14px;}
+
+}
+
+@media (max-width: 767px){
+
+  .contactBox .infoBox{width: 100%;}
+  .contactBox .infoBox .box h3{margin-bottom: 0;}
+  .contactBox .infoBox .box{margin-bottom: 36px; display: flex; gap: 0 14px;}
+  .contactBox .layoutBox{flex-direction: column; gap: 36px 0;}
+  .contactBox .mapBox{width: 100%; height: 339px;}
+
+}
+
+@media (max-width: 576px){
+  
+  .contactBox .infoBox .box{flex-direction: column; gap: 14px 0;}
+
+}
+
+@media (max-width: 414px){
+
+    .contactBox .mapBox{height: 172px;}
+
+}
