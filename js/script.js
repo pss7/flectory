@@ -55,8 +55,9 @@ $(function () {
     }
   });
 
-  $('.textPopup .closeBtn').click(function () {
+  $('.textPopup, .imgPopup .closeBtn').click(function () {
     $('.textPopup').fadeOut();
+    $('.imgPopup').fadeOut();
   });
 
 });
