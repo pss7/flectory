@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+/* 공통 - 정렬 */
+.text-left{text-align: left!important;}
+
 /* 가운데영역 */
 .container{max-width: 1416px; margin: 0 auto; padding: 0 60px;}
 
