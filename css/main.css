@@ -23,7 +23,7 @@
 #mainWrap .mainBox .box.active .tab{display: none;}
 #mainWrap .mainBox .box.swiper-slide-active .titleBox,
 #mainWrap .mainBox .box.active .titleBox{opacity: 1; transition: all 1.5s 1s;}
-#mainWrap .control{position: absolute; left:72px; bottom: 36px; display: flex; align-items: center; justify-content: center; gap: 0 53px; width: 216px; height: 40px; background-color:rgba(30, 31, 30, 0.8); z-index: 9;}
+#mainWrap .control{position: absolute; left:72px; bottom: 36px; display: flex; align-items: center; justify-content: center; gap: 0 53px; width: 216px; height: 40px; background-color:rgba(30, 31, 30, 0.8); z-index: 999;}
 #mainWrap .control button{position: relative;}
 #mainWrap .control .prev{width: 10px; height: 18px; background: url(../images/main/prev_icon.svg)no-repeat center; background-size: contain;}
 #mainWrap .control .next{width: 10px; height: 18px; background: url(../images/main/next_icon.svg)no-repeat center; background-size: contain;}
