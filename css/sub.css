@@ -13,7 +13,9 @@
 #headerWrap .sitemapBtn{background: url(../images/common/mobile_menu02.svg)no-repeat center;}
 .breadcrumb{padding-top: 2px; display: flex; align-items: center; gap: 0 25px; height: 33px;}
 .breadcrumb li{position: relative; font-size: 14px; font-weight: 500; color: #ccc;}
+.breadcrumb li a{display: block;  font-size: 14px; font-weight: 500; color: #ccc;}
 .breadcrumb li:last-child{color: #FF7C3B;}
+.breadcrumb li:last-child a{color: #FF7C3B;}
 .breadcrumb li::after{content: '>'; position: absolute; top: 50%; transform: translateY(-55%); right:-17px; color: #ccc;}
 .breadcrumb li:last-child::after{display: none;}
 .imgBox img{display: block; margin: 0 auto; width: 100%; object-fit: contain;}
