@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>작업내역</title>
+    <style>
+        #wrap {
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 26px;
+            margin: 0 0 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        thead th {
+            padding: 10px 20px;
+            border: 1px solid #ddd;
+            font-weight: 500;
+            color: #000;
+            background-color: #f7f7f7;
+        }
+
+        tbody th {
+            width: 50%;
+            padding: 10px 20px;
+            border: 1px solid #ddd;
+            font-weight: 400;
+        }
+
+        tbody td {
+            width: 50%;
+            padding: 10px 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+            color: #000;
+        }
+
+        .title th {
+            background-color: #f7f7f7;
+            font-weight: 500;
+        }
+
+        @media (max-width: 480px) {
+
+            h1 {
+                font-size: 22px;
+            }
+
+            .tableBox {
+                overflow-x: auto;
+            }
+
+            .tableBox table {
+                width: 480px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="wrap">
+        <h1>
+            플랙토리 작업내역
+        </h1>
+        <div class="tableBox">
+            <table>
+                <thead>
+                    <tr>
+                        <th>내용</th>
+                        <th>파일명</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>메인</th>
+                        <td><a href="index.html" target="_blank">index.html</a></td>
+                    </tr>
+                    <tr class="title">
+                        <th colspan="2">
+                            서브
+                        </th>
+                    </tr>
+                    <tr class="title">
+                        <th colspan="2">
+                            PRIVATE 5G
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Overview</th>
+                        <td><a href="sub/sub_private5g_overview.html" target="_blank">sub_private5g_overview.html</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>5G Core</th>
+                        <td><a href="sub/sub_private5g_5gcore.html" target="_blank">sub_private5g_5gcore.html</a></td>
+                    </tr>
+                    <tr>
+                        <th>CUDU</th>
+                        <td><a href="sub/sub_private5g_cudu.html" target="_blank">sub_private5g_cudu.html</a></td>
+                    </tr>
+                    <tr>
+                        <th>Radio/Small Cell</th>
+                        <td><a href="sub/sub_private5g_radio-smallcell.html"
+                                target="_blank">sub_private5g_radio-smallcell.html</a></td>
+                    </tr>
+                    <tr>
+                        <th>CPE/UE</th>
+                        <td><a href="sub/sub_private5g_cpe-ue.html" target="_blank">sub_private5g_cpe-ue.html</a></td>
+                    </tr>
+                    <tr>
+                        <th>Management</th>
+                        <td><a href="sub/sub_private5g_management.html"
+                                target="_blank">sub_private5g_management.html</a></td>
+                    </tr>
+                    <tr class="title">
+                        <th colspan="2">
+                            IoT PLATFORM
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Overview</th>
+                        <td><a href="sub/sub_lot-platform_overview.html"
+                                target="_blank">sub_lot-platform_overview.html</a></td>
+                    </tr>
+                    <tr>
+                        <th>Unified Monitoring</th>
+                        <td><a href="sub/sub_lot-platform_unified-monitoring.html"
+                                target="_blank">sub_lot-platform_unified-monitoring.html</a></td>
+                    </tr>
+                    <tr>
+                        <th>IoT G/W</th>
+                        <td><a href="sub/sub_lot-platform_lot-gw.html" target="_blank">sub_lot-platform_lot-gw.html</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>IoT Sensor</th>
+                        <td><a href="sub/sub_lot-platform_lot-sensor.html"
+                                target="_blank">sub_lot-platform_lot-sensor.html</a>
+                        </td>
+                    </tr>
+                    <tr class="title">
+                        <th colspan="2">
+                            BIG DATA & AI
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Overview</th>
+                        <td><a href="sub/sub_big-data&ai_overview.html"
+                                target="_blank">sub_big-data&ai_overview.html</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Data Hub</th>
+                        <td><a href="sub/sub_big-data&ai_data-hub.html"
+                                target="_blank">sub_big-data&ai_data-hub.html</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Flow Management</th>
+                        <td><a href="sub/sub_big-data&ai_flow_management.html"
+                                target="_blank">sub_big-data&ai_flow_management.html</a>
+                        </td>
+                    </tr>
+                    <tr class="title">
+                        <th colspan="2">
+                            팝업
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>텍스트형</th>
+                        <td><a href="popup_text.html" target="_blank">popup_text.html</a>
+                        </td>
+                    </tr>
+                       <tr>
+                        <th>이미지형</th>
+                        <td><a href="popup_img.html" target="_blank">popup_img.html</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
