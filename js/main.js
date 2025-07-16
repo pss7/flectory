@@ -93,7 +93,7 @@ $(function () {
       slidesPerView: 1,
       loop: true,
       navigation: { nextEl: '.control .next', prevEl: '.control .prev' },
-      autoplay: { delay: 10000, disableOnInteraction: false },
+      autoplay: { delay: 15000, disableOnInteraction: false },
       speed: 1500,
     });
 
